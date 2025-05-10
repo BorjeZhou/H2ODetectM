@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="MainWindow_System" xml:space="preserve"><value>System</value></data>
+  <data name="Information" xml:space="preserve"><value>Information</value></data>
+  <data name="TC_Order_Repeat" xml:space="preserve"><value>Order Repeat</value></data>
+  <data name="PSW_HoleWidthMax" xml:space="preserve"><value>Hole width max(s)</value></data>
+  <data name="PwdGuard_InputNewPassword" xml:space="preserve"><value>Input New Password</value></data>
+  <data name="CTW_RegressionCorrectionParam" xml:space="preserve"><value>Regression corretion params</value></data>
+  <data name="CTW_RemoveSplitTemp" xml:space="preserve"><value>Remove temp</value></data>
+  <data name="RegressionWindow_Mark_TEMP" xml:space="preserve"><value>For Temp Regression</value></data>
+  <data name="PSW_Off" xml:space="preserve"><value>Off</value></data>
+  <data name="PSW_Fix" xml:space="preserve"><value>Fix</value></data>
+  <data name="PSW_H20ToElecRange" xml:space="preserve"><value>H₂O Scaling Range(%) for 4mA/20mA</value></data>
+  <data name="CTW_CorrectionValue_d" xml:space="preserve"><value>Correction value(%)</value></data>
+  <data name="MainWindow_Run_Waitting" xml:space="preserve"><value>Running|Waitting</value></data>
+  <data name="RecipeWindow_LastModifyDate" xml:space="preserve"><value>LastModifyDate</value></data>
+  <data name="PSW_WidthSensorElecRecv" xml:space="preserve"><value>Width Sensor Min/Max current (mA)(receive)</value></data>
+  <data name="PSW_WidthSensorElecSend" xml:space="preserve"><value>Width Sensor Min/Max current (mA)(send)</value></data>
+  <data name="PSW_Chart_DrawChartType" xml:space="preserve"><value>Draw Chart Type</value></data>
+  <data name="SamplingWindow_title" xml:space="preserve"><value>SamplingWindow</value></data>
+  <data name="PSW_ChangedAt" xml:space="preserve"><value>Changed at</value></data>
+  <data name="MainWindow_Password" xml:space="preserve"><value>Password</value></data>
+  <data name="PSW_TotalH2OCalculateType_AvgH2O" xml:space="preserve"><value>Avg H2O</value></data>
+  <data name="PSW_TotalH2OCalculateType_AvgCPS" xml:space="preserve"><value>Avg CPS</value></data>
+  <data name="Accept" xml:space="preserve"><value>Accept</value></data>
+  <data name="MainWindow_Height" xml:space="preserve"><value>Height</value></data>
+  <data name="BusWindow_Total" xml:space="preserve"><value>Total</value></data>
+  <data name="BusWindow_Title" xml:space="preserve"><value>Bus Window</value></data>
+  <data name="RSCW_RegressionSampleCompare" xml:space="preserve"><value>Regression Sample Compare</value></data>
+  <data name="BusWindow_Input" xml:space="preserve"><value>Input</value></data>
+  <data name="RecipeWindow_Display" xml:space="preserve"><value>Display</value></data>
+  <data name="PSW_Off_NoConfirm" xml:space="preserve"><value>Off(No confirm)</value></data>
+  <data name="Distance_m" xml:space="preserve"><value>Distance(m)</value></data>
+  <data name="DELETE" xml:space="preserve"><value>Delete</value></data>
+  <data name="MainWindow_Temp_mA" xml:space="preserve"><value>Temp-[mA]</value></data>
+  <data name="RegressionWindow_SampleGraph" xml:space="preserve"><value>Sample Graph</value></data>
+  <data name="PSW_ChartOption" xml:space="preserve"><value>Chart Option</value></data>
+  <data name="CTW_AddSplitTemp" xml:space="preserve"><value>Add temp</value></data>
+  <data name="PSW_TempCorrection_Title" xml:space="preserve"><value>Custom Temp Correction</value></data>
+  <data name="PSW_TempCorrection_Value" xml:space="preserve"><value>Correction H₂O Value(%)</value></data>
+  <data name="PSW_SomeFieldError" xml:space="preserve"><value>Some field error</value></data>
+  <data name="PSW_WidthSlope" xml:space="preserve"><value>Slope for width (m/mA)</value></data>
+  <data name="CANCEL" xml:space="preserve"><value>Cancel</value></data>
+  <data name="PSW_CutPoints_Cycles" xml:space="preserve"><value>Cut of Points(cycles)</value></data>
+  <data name="PSW_MeasFinished" xml:space="preserve"><value>Measurement Finished Digital</value></data>
+  <data name="MainWindow_CanRun" xml:space="preserve"><value>CanRun:</value></data>
+  <data name="PSW_TotalH2OCalculateType" xml:space="preserve"><value>TotalH2O Calculate Type</value></data>
+  <data name="MainWindow_Exit" xml:space="preserve"><value>Exit</value></data>
+  <data name="MainWindow_Corr" xml:space="preserve"><value>+℃ Corr</value></data>
+  <data name="MainWindow_ChangeLanguageNotify" xml:space="preserve"><value>The language change takes effect only after a restart,Confirm the restart?</value></data>
+  <data name="TC_Order" xml:space="preserve"><value>Order</value></data>
+  <data name="CTW_StartTemp_d" xml:space="preserve"><value>Start temp(℃)</value></data>
+  <data name="SettingWindow_RS232Comminication" xml:space="preserve"><value>RS232 Comminication</value></data>
+  <data name="MainWindow_BACH_Data" xml:space="preserve"><value>Bach-Data </value></data>
+  <data name="CTW_TempCorrType" xml:space="preserve"><value>Temp corretion type:</value></data>
+  <data name="RecordWindow_Duration" xml:space="preserve"><value>Duration</value></data>
+  <data name="PSW_Alarm_Low_Digital" xml:space="preserve"><value>Low H₂O Alarm Digital</value></data>
+  <data name="PSW_None" xml:space="preserve"><value>None</value></data>
+  <data name="CPS_ZeroRate" xml:space="preserve"><value>CPS(ZeroRate)</value></data>
+  <data name="SettingWindow_SamePortError" xml:space="preserve"><value>bus prot can not same with plc port</value></data>
+  <data name="PSW_OutputAlarmInfoToPLCPort" xml:space="preserve"><value>IsOutPut</value></data>
+  <data name="PSW_Chart_Trend" xml:space="preserve"><value>Trend</value></data>
+  <data name="MainChart_Distance_m" xml:space="preserve"><value>Distance(m)</value></data>
+  <data name="PSW_Alarm_High_Digital" xml:space="preserve"><value>High H₂O Alarm Digital</value></data>
+  <data name="RegressionCalWindow_Caculation" xml:space="preserve"><value>Caculation</value></data>
+  <data name="Time_s" xml:space="preserve"><value>Time(s)</value></data>
+  <data name="PSW_SelectRecipe" xml:space="preserve"><value>Select Recipe</value></data>
+  <data name="PSW_Chart_RealWave" xml:space="preserve"><value>Real Wave</value></data>
+  <data name="PSW_TemperatureCorrectionParam" xml:space="preserve"><value>Ref.To(℃) / correction parameter(1/℃)</value></data>
+  <data name="RecordWindow_Start" xml:space="preserve"><value>Start</value></data>
+  <data name="RecordWindow_ToCSV" xml:space="preserve"><value>To csv</value></data>
+  <data name="RecordWindow_Total" xml:space="preserve"><value>Total</value></data>
+  <data name="RecordWindow_Title" xml:space="preserve"><value>Record List</value></data>
+  <data name="RecordWindow_Width" xml:space="preserve"><value>Width</value></data>
+  <data name="SettingWindow_PlcPort" xml:space="preserve"><value>Plc Data Port COM</value></data>
+  <data name="SettingWindow_PlcAddr" xml:space="preserve"><value>Plc Slave Addr</value></data>
+  <data name="H20_TempCorr" xml:space="preserve"><value>H₂O(Temp Corr)</value></data>
+  <data name="RecordWindow_End" xml:space="preserve"><value>End</value></data>
+  <data name="TempCorrection" xml:space="preserve"><value>Temp Correction</value></data>
+  <data name="PSW_RunMode_DataSource" xml:space="preserve"><value>Running Setting</value></data>
+  <data name="MainWindow_Regression" xml:space="preserve"><value>Regression</value></data>
+  <data name="SettingWindow_DigitalLogic" xml:space="preserve"><value>Digital Logic</value></data>
+  <data name="SamplingWindow_SampleNo" xml:space="preserve"><value>Sample No</value></data>
+  <data name="CTW_EndTemp_d" xml:space="preserve"><value>End temp(℃)</value></data>
+  <data name="MainWindow_Sampling" xml:space="preserve"><value>Sampling</value></data>
+  <data name="PSW_DigitalInput2" xml:space="preserve"><value>Digital input 2</value></data>
+  <data name="PSW_DigitalInput1" xml:space="preserve"><value>Digital input 1</value></data>
+  <data name="PSW_ValueCaseIfDetectorError_Fix" xml:space="preserve"><value>Fix</value></data>
+  <data name="PSW_ValueCaseIfDetectorError_Min" xml:space="preserve"><value>Min</value></data>
+  <data name="PSW_ValueCaseIfDetectorError_Max" xml:space="preserve"><value>Max</value></data>
+  <data name="PSW_DisplayH20Range" xml:space="preserve"><value>H₂O Display Range Min/Max</value></data>
+  <data name="MainWindow_ExitInfo" xml:space="preserve"><value>Exit Application(Y) Or Minimized(N) ?</value></data>
+  <data name="PSW_AlarmDigitalSetting" xml:space="preserve"><value>Alarm Digital Setting</value></data>
+  <data name="CTW_Msg3" xml:space="preserve"><value>The current parameter, split point, transition range, etc. may have errors, please check</value></data>
+  <data name="CTW_Msg2" xml:space="preserve"><value>A calibrated moisture value must be entered</value></data>
+  <data name="CTW_Msg1" xml:space="preserve"><value>The maximum number of split points allowed is :</value></data>
+  <data name="PSW_CutPoints_Cycles_Name" xml:space="preserve"><value>Whole Pack</value></data>
+  <data name="PSW_TemperatureCorrection" xml:space="preserve"><value>Temperature Compute Type</value></data>
+  <data name="MainWindow_Width_mA" xml:space="preserve"><value>Width-[mA]</value></data>
+  <data name="PSW_Chart_X_AxisVelosity" xml:space="preserve"><value>X-Axis Velosity(m/s)</value></data>
+  <data name="S_Enabled_SpliteCPS" xml:space="preserve"><value>Enabled/Split CPS</value></data>
+  <data name="Comfirm" xml:space="preserve"><value>Comfirm</value></data>
+  <data name="RecordWindow_DeleteConfirm" xml:space="preserve"><value>Are you sure to delete?</value></data>
+  <data name="SampleCompareChart_LaberValue" xml:space="preserve"><value>Labor Value</value></data>
+  <data name="StaticCorrection" xml:space="preserve"><value>Static Correction</value></data>
+  <data name="Password" xml:space="preserve"><value>Password</value></data>
+  <data name="Language" xml:space="preserve"><value>语言</value></data>
+  <data name="PSW_MeasureH20Range" xml:space="preserve"><value>Measurement H₂O Range(%) Min/Max</value></data>
+  <data name="RegressionCalWindow_SaveError" xml:space="preserve"><value>Save Error</value></data>
+  <data name="MainChart_Time_s" xml:space="preserve"><value>Time(s)</value></data>
+  <data name="RawDataChartWindow_LeftAxis" xml:space="preserve"><value>Left Axis</value></data>
+  <data name="PSW_WidthOffset" xml:space="preserve"><value>Offset for width(m)</value></data>
+  <data name="PackageWeight" xml:space="preserve"><value>PackageWeight</value></data>
+  <data name="MainWindow_Yes" xml:space="preserve"><value>Yes</value></data>
+  <data name="MainWindow_H2O" xml:space="preserve"><value>H₂O</value></data>
+  <data name="MainWindow_Bus" xml:space="preserve"><value>Bus</value></data>
+  <data name="PSW_RecipeCoefficients" xml:space="preserve"><value>Recipe Coefficients</value></data>
+  <data name="SamplingWindow_Running" xml:space="preserve"><value>Running</value></data>
+  <data name="SampleCompareChart_SampleIndex" xml:space="preserve"><value>Sample Index</value></data>
+  <data name="RecordWindow_ExportSuccess" xml:space="preserve"><value>Export Success</value></data>
+  <data name="PSW_ParamSetting" xml:space="preserve"><value>ParamSetting</value></data>
+  <data name="PSW_BoardTempElecRange" xml:space="preserve"><value>Board temp for min/max elec (mA)</value></data>
+  <data name="OK" xml:space="preserve"><value>OK</value></data>
+  <data name="PSW_WidthSensorMaxDistance" xml:space="preserve"><value>Width/Height Sensor Max Distance(m)</value></data>
+  <data name="S_Split_data_type" xml:space="preserve"><value>Select Splite Data Type</value></data>
+  <data name="SamplingWindow_SampleH2O" xml:space="preserve"><value>H₂O(%)-Sample</value></data>
+  <data name="MainWindow_BachBus" xml:space="preserve"><value>Bach-Bus</value></data>
+  <data name="PSW_ZeroRate_EnableDynamic" xml:space="preserve"><value>ZeroRate/Enable Dynamic ZeroRate</value></data>
+  <data name="RecordWindow_Records" xml:space="preserve"><value>Records</value></data>
+  <data name="PSW_ZeroRate" xml:space="preserve"><value>ZeroRate</value></data>
+  <data name="SettingWindow_DataLog" xml:space="preserve"><value>Data-Log</value></data>
+  <data name="Add" xml:space="preserve"><value>Add</value></data>
+  <data name="Min" xml:space="preserve"><value>Min</value></data>
+  <data name="Max" xml:space="preserve"><value>Max</value></data>
+  <data name="New" xml:space="preserve"><value>New</value></data>
+  <data name="Old" xml:space="preserve"><value>Old</value></data>
+  <data name="H2O" xml:space="preserve"><value>H₂O</value></data>
+  <data name="Error" xml:space="preserve"><value>Error</value></data>
+  <data name="Index" xml:space="preserve"><value>Index</value></data>
+  <data name="PSW_MeasurementFinishedRelay" xml:space="preserve"><value>Measurement is finished relay</value></data>
+  <data name="Start" xml:space="preserve"><value>Start</value></data>
+  <data name="SampleCompareChart_MeasureValue" xml:space="preserve"><value>Measure Value</value></data>
+  <data name="PSW_ValidWidthForTrigger" xml:space="preserve"><value>Valid Width for Trigger Meas Min/Max(m)</value></data>
+  <data name="RegressionWindow_Mark_CPS" xml:space="preserve"><value>For CPS Regression</value></data>
+  <data name="ClearWhenFinished" xml:space="preserve"><value>Clear when finished</value></data>
+  <data name="SettingWindow_ChangePwd" xml:space="preserve"><value>Change Pwd</value></data>
+  <data name="PSW_ConfirmAlarm" xml:space="preserve"><value>Confirm Alarm</value></data>
+  <data name="CTW_AvgWeightRange" xml:space="preserve"><value>Transition multi slope temp range for weighted average (° C)</value></data>
+  <data name="PSW_Offset" xml:space="preserve"><value>Offset</value></data>
+  <data name="SamplingWindow_InvalidClose" xml:space="preserve"><value>Stop Sampling before close window!</value></data>
+  <data name="RegressionWindow_NoDataSelected" xml:space="preserve"><value>No selected data to regressive calculation</value></data>
+  <data name="PSW_DistanceBetweenWidthHeightSensors" xml:space="preserve"><value>The width/height sensor sets the distance(m)</value></data>
+  <data name="RecordWindow_Recipe" xml:space="preserve"><value>Recipe</value></data>
+  <data name="RawDataChartWindow_Height" xml:space="preserve"><value>Height(m)</value></data>
+  <data name="PSW_BoardTempRange" xml:space="preserve"><value>Board temp min/max(℃)</value></data>
+  <data name="RawDataChartWindow_Width" xml:space="preserve"><value>Width(m)</value></data>
+  <data name="PSW_ValueCaseIfDetectorError" xml:space="preserve"><value>Value in case if detector error</value></data>
+  <data name="RawDataChartWindow_Title" xml:space="preserve"><value>Raw Data Chart Window</value></data>
+  <data name="PSW_MeasureCPSRange" xml:space="preserve"><value>Measurement CPS Min/Max</value></data>
+  <data name="BusWindow_Current" xml:space="preserve"><value>Current</value></data>
+  <data name="PSW_AlarmPLCOutput" xml:space="preserve"><value>Alarm PLC Output</value></data>
+  <data name="MainWindow_Current" xml:space="preserve"><value>Current</value></data>
+  <data name="RegressionWindow_TempCorrH2O" xml:space="preserve"><value>Temp Corr H₂O</value></data>
+  <data name="PSW_Chart_Distance" xml:space="preserve"><value>Distance</value></data>
+  <data name="MainWindow_Width" xml:space="preserve"><value>Width</value></data>
+  <data name="MainWindow_Title" xml:space="preserve"><value>Microwave Moisture Tester</value></data>
+  <data name="MainWindow_Total" xml:space="preserve"><value>Total</value></data>
+  <data name="CTW_SplitTemp" xml:space="preserve"><value>Split temp</value></data>
+  <data name="RecordWindow_Height" xml:space="preserve"><value>Height</value></data>
+  <data name="PSW_Chart_X_AxisBarWidth_point_FontSize" xml:space="preserve"><value>X-Axis Bar width(point)/FontSize</value></data>
+  <data name="RegressionWindow_Title" xml:space="preserve"><value>Calibration Table</value></data>
+  <data name="PSW_Chart_X_AxisBar_Angle_Decimal" xml:space="preserve"><value>X-Axis Bar LabelAngle/Decimal</value></data>
+  <data name="RegressionWindow_Labor" xml:space="preserve"><value>Labor</value></data>
+  <data name="SettingWindow_BoardPort" xml:space="preserve"><value>Board Port</value></data>
+  <data name="RecipeWindow_SortNum" xml:space="preserve"><value>SortNum</value></data>
+  <data name="ALangDisplay" xml:space="preserve"><value>English</value></data>
+  <data name="RecordWindow_Latest" xml:space="preserve"><value>Latest</value></data>
+  <data name="PSW_Behind" xml:space="preserve"><value>Behind</value></data>
+  <data name="SettingWindow_DigOut" xml:space="preserve"><value>Dig.Out</value></data>
+  <data name="RegressionWindow_Diff" xml:space="preserve"><value>Diff</value></data>
+  <data name="PSW_WidthSensorSetZeroMaxElec" xml:space="preserve"><value>Width sensor set zero width max elec(mA)</value></data>
+  <data name="PSW_24GAmendmentParam" xml:space="preserve"><value>2.4G CPS Amendment Param</value></data>
+  <data name="PSW_RecipeParanWarning" xml:space="preserve"><value>[{0}]recipe parameter invalid</value></data>
+  <data name="PSW_Chart_Time" xml:space="preserve"><value>Time</value></data>
+  <data name="RecipeWindow_Edit_Accept" xml:space="preserve"><value>Edit|Accept</value></data>
+  <data name="PSW_WidthSensorMinDistance" xml:space="preserve"><value>Distance Sensor Min Distance(m)</value></data>
+  <data name="ParamSetting" xml:space="preserve"><value>Param Setting</value></data>
+  <data name="BusWindow_Output" xml:space="preserve"><value>Output</value></data>
+  <data name="PSW_DynamicZerorateCutPoint_Sec" xml:space="preserve"><value>DynamicZerorate Drop Begin/End Sec</value></data>
+  <data name="PSW_EnableStage_SpliteCPS" xml:space="preserve"><value>Enabled stage and Split cps</value></data>
+  <data name="PSW_StaticRecursiveFilterDuration" xml:space="preserve"><value>Static/Zerorate Recursive Duration(s)</value></data>
+  <data name="PSW_DurationTimes" xml:space="preserve"><value>Duration times</value></data>
+  <data name="Refresh" xml:space="preserve"><value>Refresh</value></data>
+  <data name="SettingWindow_DigIn" xml:space="preserve"><value>Dig.In</value></data>
+  <data name="SettingWindow_Title" xml:space="preserve"><value>SettingWindow</value></data>
+  <data name="SamplingWindow_StartTime" xml:space="preserve"><value>Start Time</value></data>
+  <data name="PSW_SplitCPSRange" xml:space="preserve"><value>Split CPS Range</value></data>
+  <data name="PSW_DurationForCalibration" xml:space="preserve"><value>Duration for Calibration(s)</value></data>
+  <data name="PwdGuard_PasswordIncorrect" xml:space="preserve"><value>Password incorrect!</value></data>
+  <data name="PSW_SaveSuccess" xml:space="preserve"><value>Save Success!</value></data>
+  <data name="CTW_EnableTempCorr" xml:space="preserve"><value>Enabled temp correction</value></data>
+  <data name="PSW_WidthHeightCorrection" xml:space="preserve"><value>Width/Height correction of H₂O value</value></data>
+  <data name="MainWindow_Height_mA" xml:space="preserve"><value>Height-[mA]</value></data>
+  <data name="PSW_AlarmH20Range" xml:space="preserve"><value>Alarm H₂O Range(%) Min/Max</value></data>
+  <data name="RecipeWindow_Name" xml:space="preserve"><value>Name</value></data>
+  <data name="Message" xml:space="preserve"><value>Message</value></data>
+  <data name="RecipeWindow_Title" xml:space="preserve"><value>Recipe Window</value></data>
+  <data name="PSW_DisplayMR" xml:space="preserve"><value>Display MR And Alarm with</value></data>
+  <data name="InputError" xml:space="preserve"><value>Input Error</value></data>
+  <data name="RecordWindow_DataView" xml:space="preserve"><value>Data View</value></data>
+  <data name="RecordWindow_No" xml:space="preserve"><value>No</value></data>
+  <data name="SettingWindow_OtherSetting" xml:space="preserve"><value>OtherSetting</value></data>
+  <data name="PSW_Relay2" xml:space="preserve"><value>Relay 2</value></data>
+  <data name="CTW_StaticCorrectionParam" xml:space="preserve"><value>Static corretion params</value></data>
+  <data name="RegressionCorrection" xml:space="preserve"><value>Regression Correction</value></data>
+  <data name="RegressionCalWindow_Title" xml:space="preserve"><value>RegressionCalWindow</value></data>
+  <data name="RecordWindow_SelectDate" xml:space="preserve"><value>Select Date</value></data>
+  <data name="RecordWindow_Details" xml:space="preserve"><value>Details</value></data>
+  <data name="PwdWindow_Input" xml:space="preserve"><value>Input</value></data>
+  <data name="PwdGuard_InputPassword" xml:space="preserve"><value>Input Password</value></data>
+  <data name="PackageNum" xml:space="preserve"><value>PackageNO</value></data>
+  <data name="RegressionWindow_Regression" xml:space="preserve"><value>Regression</value></data>
+  <data name="TC_Reorder" xml:space="preserve"><value>Reorder</value></data>
+  <data name="SettingWindow_DataPort" xml:space="preserve"><value>Bus Data Port COM</value></data>
+  <data name="MainWindow_MR" xml:space="preserve"><value>MR</value></data>
+  <data name="MainWindow_No" xml:space="preserve"><value>No</value></data>
+  <data name="RawDataChartWindow_RightAxis" xml:space="preserve"><value>Right Axis</value></data>
+  <data name="SamplingWindow_Duration_s" xml:space="preserve"><value>Duration(s)</value></data>
+  <data name="PSW_TempCorrection_Custom" xml:space="preserve"><value>Custom Temp Correction(℃)</value></data>
+  <data name="MainWindow_Temp_C" xml:space="preserve"><value>Temp-℃</value></data>
+  <data name="PSW_Chart_X_DisplayType" xml:space="preserve"><value>X-Axis Display Type</value></data>
+  <data name="RecordWindow_Temp" xml:space="preserve"><value>Temp</value></data>
+  <data name="MainWindow_Parameter" xml:space="preserve"><value>Parameter</value></data>
+  <data name="PSW_AlarmMRRange" xml:space="preserve"><value>Alarm MR Range(%) Min/Max</value></data>
+  <data name="PSW_HeightSensorElec" xml:space="preserve"><value>Height Sensor Min/Max current (mA)</value></data>
+  <data name="Diff_TempCorr" xml:space="preserve"><value>Diif (Temp Corr)</value></data>
+  <data name="PSW_DurationCharge_Min_Max" xml:space="preserve"><value>Duration of Charge(s) Min/Max</value></data>
+  <data name="MainWindow_RecordData" xml:space="preserve"><value>RecordData</value></data>
+  <data name="Edit" xml:space="preserve"><value>Edit</value></data>
+  <data name="EXIT" xml:space="preserve"><value>Exit</value></data>
+  <data name="Drop" xml:space="preserve"><value>Drop</value></data>
+  <data name="Stop" xml:space="preserve"><value>Stop</value></data>
+  <data name="SAVE" xml:space="preserve"><value>Save</value></data>
+  <data name="PSW_Only2" xml:space="preserve"><value>Only 2</value></data>
+  <data name="PSW_Only1" xml:space="preserve"><value>Only 1</value></data>
+  <data name="MainWindow_Recipe" xml:space="preserve"><value>Recipes</value></data>
+  <data name="PSW_Front" xml:space="preserve"><value>Front</value></data>
+  <data name="PSW_Title" xml:space="preserve"><value>ParamSettingWindow</value></data>
+  <data name="PSW_Slope" xml:space="preserve"><value>Slope</value></data>
+  </root>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="GCProject.Main.Windows.SettingWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:GCProject.Main.Windows" xmlns:config="clr-namespace:GCProject.Main.Configs" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:l="clr-namespace:GCProject.Main.LangResource" Title="{x:Static l:Lang.SettingWindow_Title}" Height="390" Width="550" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+  <Grid Name="MainGrid" Margin="10">
+    <FrameworkElement.Resources>
+      <ResourceDictionary>
+        <Style x:Key="{x:Type GroupBox}" TargetType="{x:Type GroupBox}" />
+      </ResourceDictionary>
+    </FrameworkElement.Resources>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="1.2*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,10">
+      <Button Height="60" Click="ChangePasswordClick">
+        <StackPanel>
+          <wpf:PackIcon xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" wpf:PackIcon.Kind="Key" FrameworkElement.Height="30" FrameworkElement.Width="30" FrameworkElement.HorizontalAlignment="Center" />
+          <TextBlock Text="{x:Static l:Lang.SettingWindow_ChangePwd}" HorizontalAlignment="Center" />
+        </StackPanel>
+      </Button>
+      <Button Height="60" Margin="10,0,0,0" Click="SaveClick">
+        <StackPanel>
+          <PackIcon p13:PackIcon.Kind="ContentSave" FrameworkElement.Height="30" FrameworkElement.Width="30" FrameworkElement.HorizontalAlignment="Center" xmlns:p13="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" xmlns="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" />
+          <TextBlock Text="{x:Static l:Lang.SAVE}" HorizontalAlignment="Center" />
+        </StackPanel>
+      </Button>
+      <Button Height="60" Margin="10,0,0,0" Cursor="Hand" Click="SettingWindowClose">
+        <StackPanel>
+          <PackIcon p13:PackIcon.Kind="ExitToApp" FrameworkElement.Height="30" FrameworkElement.Width="30" FrameworkElement.HorizontalAlignment="Center" xmlns:p13="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" xmlns="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" />
+          <TextBlock Text="{x:Static l:Lang.EXIT}" HorizontalAlignment="Center" />
+        </StackPanel>
+      </Button>
+    </StackPanel>
+    <GroupBox Header="{x:Static l:Lang.SettingWindow_OtherSetting}" Grid.Column="1" Padding="10">
+      <StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+          <TextBlock Text="{x:Static l:Lang.SettingWindow_DataLog}" Width="100" />
+          <CheckBox IsChecked="True" />
+        </StackPanel>
+      </StackPanel>
+    </GroupBox>
+    <GroupBox Header="{x:Static l:Lang.SettingWindow_DigitalLogic}" Padding="10">
+      <StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock Text="{x:Static l:Lang.SettingWindow_DigIn}" Width="60" />
+          <TextBlock Text="1" />
+          <CheckBox IsChecked="True" Width="40" />
+          <TextBlock Text="2" />
+          <CheckBox IsChecked="True" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+          <TextBlock Text="{x:Static l:Lang.SettingWindow_DigOut}" Width="60" />
+          <TextBlock Text="1" />
+          <CheckBox IsChecked="True" Width="40" />
+          <TextBlock Text="2" />
+          <CheckBox IsChecked="True" />
+        </StackPanel>
+      </StackPanel>
+    </GroupBox>
+    <GroupBox Header="{x:Static l:Lang.SettingWindow_RS232Comminication}" Grid.Row="1" Padding="5">
+      <StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock Text="{x:Static l:Lang.SettingWindow_DataPort}" Width="135" VerticalAlignment="Center" />
+          <ComboBox Name="cmbx_bus" Width="60" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock Text="{x:Static l:Lang.SettingWindow_BoardPort}" Width="135" VerticalAlignment="Center" />
+          <ComboBox Name="cmbx_board" Width="60" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock Text="{x:Static l:Lang.SettingWindow_PlcPort}" Width="135" VerticalAlignment="Center" />
+          <ComboBox Name="cmbx_plc" Width="60" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock Text="{x:Static l:Lang.SettingWindow_PlcAddr}" Width="130" VerticalAlignment="Center" />
+          <TextBox Style="{StaticResource EditTextBox}" Width="60" Text="{Binding PLCSlaveAddr, ValidatesOnExceptions=True}" />
+        </StackPanel>
+        <Button VerticalAlignment="Bottom" HorizontalAlignment="Left" Padding="0" Style="{StaticResource MaterialDesignFlatButton}" Grid.Row="1" Click="RequirKeyboardClick">
+          <PackIcon p13:PackIcon.Kind="Keyboard" FrameworkElement.Height="45" FrameworkElement.Width="60" Control.Foreground="#FF00008B" FrameworkElement.VerticalAlignment="Center" xmlns:p13="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" xmlns="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" />
+        </Button>
+      </StackPanel>
+    </GroupBox>
+  </Grid>
+</Window>

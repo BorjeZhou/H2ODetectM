@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="GCProject.Main.Windows.AboutWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:GCProject.Main.Windows" Title="About BACH Industrie Messtechnologie" Height="350" Width="500" Icon="/Resource/AppLogo.ico" WindowStartupLocation="CenterOwner" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="2*" />
+      <RowDefinition Height="1*" />
+    </Grid.RowDefinitions>
+    <Image Source="/Resource/SplashLogo.png" />
+    <DockPanel Grid.Row="1">
+      <TextBlock Text="Copyright © 2021 BACH Industrie Messtechnologie All rights reserved." FontWeight="Bold" DockPanel.Dock="Top" HorizontalAlignment="Center" />
+      <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+        <TextBlock Text="Current Verson:" HorizontalAlignment="Center" />
+        <TextBlock Name="lb_verson" HorizontalAlignment="Center" />
+      </StackPanel>
+    </DockPanel>
+  </Grid>
+</Window>

@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="GCProject.Main.Windows.ParamSettingWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:GCProject.Main.Windows" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:config="clr-namespace:GCProject.Main.Configs" xmlns:vm="clr-namespace:GCProject.Main.Windows" xmlns:model="clr-namespace:GCProject.Main.Data.Models" xmlns:l="clr-namespace:GCProject.Main.LangResource" x:Name="main" Title="{x:Static l:Lang.PSW_Title}" WindowState="Normal" MinHeight="400" Height="570" MinWidth="950" Width="950" WindowStartupLocation="CenterOwner">
+  <Grid Name="MainGrid" Margin="10" DataContext="{Binding Path=ParamSetting}">
+    <FrameworkElement.Resources>
+      <ResourceDictionary>
+        <Style x:Key="{x:Type GroupBox}" TargetType="{x:Type GroupBox}">
+          <Setter Property="Margin" Value="0,5,0,0" />
+          <Setter Property="BorderThickness" Value="1.5" />
+          <Setter Property="Padding" Value="2" />
+        </Style>
+        <Style x:Key="{x:Type TextBox}" TargetType="{x:Type TextBox}" BasedOn="{StaticResource EditTextBox}">
+          <Setter Property="Width" Value="80" />
+        </Style>
+      </ResourceDictionary>
+    </FrameworkElement.Resources>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="1.2*" />
+      <ColumnDefinition Width="1*" />
+    </Grid.ColumnDefinitions>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+      <StackPanel>
+        <FrameworkElement.Resources>
+          <ResourceDictionary>
+            <Style x:Key="{x:Type TextBox}" TargetType="{x:Type TextBox}" BasedOn="{StaticResource EditTextBox}">
+              <Setter Property="Width" Value="95" />
+              <Setter Property="Margin" Value="2" />
+            </Style>
+          </ResourceDictionary>
+        </FrameworkElement.Resources>
+        <GroupBox Header="{x:Static l:Lang.PSW_ParamSetting}" Margin="0">
+          <StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_MeasureH20Range}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding H20MeasRangeMin_868M, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding H20MeasRangeMax_868M, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_AlarmH20Range}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding H20AlarmRangeMin_868M, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding H20AlarmRangeMax_868M, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_AlarmMRRange}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding MRAlarmRangeMin, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding MRAlarmRangeMax, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_DisplayH20Range}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding H20DisplayRangeMin, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding H20DisplayRangeMax, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_MeasureCPSRange}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding CPSMeasRangeMin_868M, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding CPSMeasRangeMax_868M, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_H20ToElecRange}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding H20ToElecRangeMin_868M, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding H20ToElecRangeMax_868M, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_WidthSensorElecRecv}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding WidthSensorMinElec_1, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding WidthSensorMaxElec_1, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_WidthSensorElecSend}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding WidthSensorMinElec_2, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding WidthSensorMaxElec_2, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_WidthSensorSetZeroMaxElec}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding WidthSensorSetZeroWidthMaxElec_1, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding WidthSensorSetZeroWidthMaxElec_2, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_ValidWidthForTrigger}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding ValidMeasWidthMin, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding ValidMeasWidthMax, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_HeightSensorElec}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding HeightSensorMinElec, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding HeightSensorMaxElec, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_WidthSensorMaxDistance}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding WidthSensorMaxDist, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding HeightSensorMaxDist, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_DistanceBetweenWidthHeightSensors}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding WidthSensorsDistance, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding HeightSensorsDistance, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="25">
+              <TextBlock Text="{x:Static l:Lang.PSW_WidthHeightCorrection}" VerticalAlignment="Center" Width="230" />
+              <CheckBox Width="95" IsChecked="{Binding WidthCorrectionEnabled}" />
+              <CheckBox IsChecked="{Binding HeightCorrectionEnabled}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_TemperatureCorrectionParam}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding TempCorrectionValue, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding TempCorrectionParam, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_BoardTempElecRange}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding BoardTempMinElec, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding BoardTempMaxElec, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_BoardTempRange}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding BoardTempMinTemp, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding BoardTempMaxTemp, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_24GAmendmentParam}" VerticalAlignment="Center" Width="230" />
+              <TextBox Text="{Binding CPS24GAmendmentParam, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_TemperatureCorrection}" VerticalAlignment="Center" Width="230" />
+              <ComboBox Width="200" Margin="2,0,0,0" ItemsSource="{x:Static config:ParamSettingConfig.TempCorrectionTypesItemSource}" SelectedItem="{Binding TempCorrectionType}" Style="{x:Null}" />
+            </StackPanel>
+          </StackPanel>
+        </GroupBox>
+        <GroupBox Header="{x:Static l:Lang.PSW_RecipeCoefficients}" DataContext="{Binding ElementName=main, Path=DataContext}">
+          <StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_SelectRecipe}" VerticalAlignment="Center" Width="230" />
+              <ComboBox Name="cmbx_recipe" Width="200" HorizontalContentAlignment="Center" DisplayMemberPath="DisplayName" Style="{x:Null}" ItemsSource="{Binding RecipeList}" SelectedItem="{Binding SelectedRecipe}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_EnableStage_SpliteCPS}" VerticalAlignment="Center" Width="230" />
+              <StackPanel Orientation="Horizontal" MinHeight="25">
+                <CheckBox Content="S2" IsChecked="{Binding Path=SelectedRecipe.EnabledStage2}" />
+                <TextBox Width="52" Text="{Binding Path=SelectedRecipe.Split2, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" Visibility="{Binding Path=SelectedRecipe.EnabledStage2, Converter={StaticResource bool2VisibilityConverter}}" />
+                <CheckBox Content="S3" IsChecked="{Binding Path=SelectedRecipe.EnabledStage3}" Visibility="{Binding Path=SelectedRecipe.EnabledStage2, Converter={StaticResource bool2VisibilityConverter}}" />
+                <TextBox Width="52" Text="{Binding Path=SelectedRecipe.Split3, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" Visibility="{Binding Path=SelectedRecipe.EnabledStage3, Converter={StaticResource bool2VisibilityConverter}}" />
+              </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_SplitCPSRange}" VerticalAlignment="Center" Width="230" />
+              <TextBox Width="100" Text="{Binding Path=SelectedRecipe.SplitCPSRange, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_Slope}" VerticalAlignment="Center" Width="230" />
+              <TextBox Width="70" Text="{Binding Path=SelectedRecipe.Slope, StringFormat=F6, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Width="70" Text="{Binding Path=SelectedRecipe.Slope2, StringFormat=F6, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" Visibility="{Binding Path=SelectedRecipe.EnabledStage2, Converter={StaticResource bool2VisibilityConverter}}" />
+              <TextBox Width="70" Text="{Binding Path=SelectedRecipe.Slope3, StringFormat=F6, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" Visibility="{Binding Path=SelectedRecipe.EnabledStage3, Converter={StaticResource bool2VisibilityConverter}}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_Offset}" VerticalAlignment="Center" Width="230" />
+              <TextBox Width="70" Text="{Binding Path=SelectedRecipe.Offset, StringFormat=F6, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Width="70" Text="{Binding Path=SelectedRecipe.Offset2, StringFormat=F6, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" Visibility="{Binding Path=SelectedRecipe.EnabledStage2, Converter={StaticResource bool2VisibilityConverter}}" />
+              <TextBox Width="70" Text="{Binding Path=SelectedRecipe.Offset3, StringFormat=F6, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" Visibility="{Binding Path=SelectedRecipe.EnabledStage3, Converter={StaticResource bool2VisibilityConverter}}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_CutPoints_Cycles}" VerticalAlignment="Center" Width="230" />
+              <CheckBox IsChecked="{Binding Path=SelectedRecipe.UseCustomDropPoint}" />
+              <TextBox Text="{Binding Path=SelectedRecipe.DropFrontPoint_Custom}" IsEnabled="{Binding Path=SelectedRecipe.UseCustomDropPoint}" />
+              <TextBox Text="{Binding Path=SelectedRecipe.DropBehindPoint_Custom}" IsEnabled="{Binding Path=SelectedRecipe.UseCustomDropPoint}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_ZeroRate_EnableDynamic}" VerticalAlignment="Center" Width="230" />
+              <TextBox Width="100" Text="{Binding Path=SelectedRecipe.ZeroRate, StringFormat=F6, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <CheckBox IsChecked="{Binding Path=SelectedRecipe.EnableDynamicZeroRate}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_DynamicZerorateCutPoint_Sec}" VerticalAlignment="Center" Width="230" />
+              <TextBox Width="100" Text="{Binding Path=SelectedRecipe.DynamicZeroRateCutSecond_Begin, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" IsEnabled="{Binding Path=SelectedRecipe.EnableDynamicZeroRate}" />
+              <TextBox Width="100" Text="{Binding Path=SelectedRecipe.DynamicZeroRateCutSecond_End, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" IsEnabled="{Binding Path=SelectedRecipe.EnableDynamicZeroRate}" />
+            </StackPanel>
+          </StackPanel>
+        </GroupBox>
+      </StackPanel>
+    </ScrollViewer>
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Column="1">
+      <StackPanel Grid.Column="1">
+        <FrameworkElement.Resources>
+          <ResourceDictionary>
+            <Style x:Key="{x:Type TextBlock}" TargetType="{x:Type TextBlock}">
+              <Setter Property="Width" Value="210" />
+              <Setter Property="HorizontalAlignment" Value="Left" />
+              <Setter Property="VerticalAlignment" Value="Center" />
+            </Style>
+          </ResourceDictionary>
+        </FrameworkElement.Resources>
+        <GroupBox Header="{x:Static l:Lang.PSW_RunMode_DataSource}">
+          <StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <RadioButton Content="2.4G" Background="#FFFF0000" IsEnabled="{Binding Path=IsChecked, RelativeSource={RelativeSource self}}" IsChecked="{Binding RunMode, Converter={StaticResource enumToBoolConverter}, ConverterParameter={x:Static config:RunModeEnum.Mode_24G}}" />
+              <RadioButton Content="868M" Background="#FFFF0000" Margin="60,0,0,0" IsEnabled="{Binding Path=IsChecked, RelativeSource={RelativeSource self}}" IsChecked="{Binding RunMode, Converter={StaticResource enumToBoolConverter}, ConverterParameter={x:Static config:RunModeEnum.Mode_868M}}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+              <TextBlock Text="{x:Static l:Lang.PSW_DisplayMR}" />
+              <CheckBox VerticalAlignment="Center" IsChecked="{Binding DisplayMR}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+              <TextBlock Text="{x:Static l:Lang.PSW_TotalH2OCalculateType}" />
+              <RadioButton Content="{x:Static l:Lang.PSW_TotalH2OCalculateType_AvgCPS}" Width="90" IsChecked="{Binding TotalH2OType, Converter={StaticResource enumToBoolConverter}, ConverterParameter={x:Static config:TotalH2OCalculateType.TotalCPS}}" />
+              <RadioButton Content="{x:Static l:Lang.PSW_TotalH2OCalculateType_AvgH2O}" IsChecked="{Binding TotalH2OType, Converter={StaticResource enumToBoolConverter}, ConverterParameter={x:Static config:TotalH2OCalculateType.TotalH2O}}" />
+            </StackPanel>
+          </StackPanel>
+        </GroupBox>
+        <GroupBox Header="{x:Static l:Lang.PSW_AlarmDigitalSetting}">
+          <StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_Alarm_High_Digital}" />
+              <ComboBox Width="90" HorizontalContentAlignment="Left" ItemsSource="{x:Static config:ParamSettingConfig.FourDigitalItemSource}" SelectedItem="{Binding HighH20AlarmDigital}" Style="{x:Null}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+              <TextBlock Text="{x:Static l:Lang.PSW_Alarm_Low_Digital}" />
+              <ComboBox Width="90" HorizontalContentAlignment="Left" ItemsSource="{x:Static config:ParamSettingConfig.FourDigitalItemSource}" SelectedItem="{Binding LowH20AlarmDigital}" Style="{x:Null}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+              <TextBlock Text="{x:Static l:Lang.PSW_MeasFinished}" />
+              <ComboBox Width="90" HorizontalContentAlignment="Left" ItemsSource="{x:Static config:ParamSettingConfig.FourDigitalItemSource}" SelectedItem="{Binding MeasFinishedDigital}" Style="{x:Null}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+              <TextBlock Text="{x:Static l:Lang.PSW_AlarmPLCOutput}" />
+              <TextBox HorizontalContentAlignment="Left" Margin="0" Width="90" Text="{Binding OutputAlarmInfo}" />
+              <CheckBox Content="{x:Static l:Lang.PSW_OutputAlarmInfoToPLCPort}" VerticalAlignment="Center" IsChecked="{Binding OutputAlarmInfoToPLCPort}" />
+            </StackPanel>
+          </StackPanel>
+        </GroupBox>
+        <GroupBox Header="{x:Static l:Lang.PSW_ChartOption}">
+          <StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_Chart_X_AxisVelosity}" />
+              <TextBox Text="{Binding Velosity, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,3,0,0">
+              <TextBlock Text="{x:Static l:Lang.PSW_Chart_X_DisplayType}" />
+              <RadioButton Content="{x:Static l:Lang.PSW_Chart_Time}" Width="90" IsChecked="{Binding XScaleDispaly, Converter={StaticResource enumToBoolConverter}, ConverterParameter={x:Static config:XScaleDispalyEnum.Time}}" />
+              <RadioButton Content="{x:Static l:Lang.PSW_Chart_Distance}" IsChecked="{Binding XScaleDispaly, Converter={StaticResource enumToBoolConverter}, ConverterParameter={x:Static config:XScaleDispalyEnum.Distance}}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,3,0,0">
+              <TextBlock Text="{x:Static l:Lang.PSW_Chart_DrawChartType}" />
+              <RadioButton Content="{x:Static l:Lang.PSW_Chart_Trend}" Width="90" IsChecked="{Binding DrawChartType, Converter={StaticResource enumToBoolConverter}, ConverterParameter={x:Static config:DrawChartTypeEnum.Trend}}" />
+              <RadioButton Content="{x:Static l:Lang.PSW_Chart_RealWave}" IsChecked="{Binding DrawChartType, Converter={StaticResource enumToBoolConverter}, ConverterParameter={x:Static config:DrawChartTypeEnum.RealWave}}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+              <TextBlock Text="{x:Static l:Lang.PSW_Chart_X_AxisBarWidth_point_FontSize}" />
+              <TextBox Text="{Binding OneBarWidthPoint, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding BarChartFontSize, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+              <TextBlock Text="{x:Static l:Lang.PSW_Chart_X_AxisBar_Angle_Decimal}" />
+              <TextBox Text="{Binding BarChartLabelAngle, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding BarChartLabelDecimal, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+          </StackPanel>
+        </GroupBox>
+        <GroupBox Header="{x:Static l:Lang.PSW_DurationTimes}">
+          <StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_StaticRecursiveFilterDuration}" />
+              <TextBox Text="{Binding RecursiveFilterDuration, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding ZeroRateRecursiveDuration, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_DurationForCalibration}" />
+              <TextBox Text="{Binding CalibrationTime_s, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_DurationCharge_Min_Max}" />
+              <TextBox Text="{Binding MinChargeTime_s, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding MaxChargeTime_s, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_HoleWidthMax}" />
+              <TextBox Text="{Binding MaxEmptyPackTime, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+          </StackPanel>
+        </GroupBox>
+        <GroupBox Header="{x:Static l:Lang.PSW_CutPoints_Cycles}">
+          <StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="" />
+              <TextBox Text="{x:Static l:Lang.PSW_Front}" BorderThickness="0" HorizontalContentAlignment="Center" FontWeight="Normal" BorderBrush="#00FFFFFF" IsReadOnly="True" IsReadOnlyCaretVisible="False" />
+              <TextBox Text="{x:Static l:Lang.PSW_Behind}" BorderThickness="0" HorizontalContentAlignment="Center" FontWeight="Normal" BorderBrush="#00FFFFFF" IsReadOnly="True" IsReadOnlyCaretVisible="False" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+              <TextBlock Text="{x:Static l:Lang.PSW_CutPoints_Cycles_Name}" />
+              <TextBox Text="{Binding DropFrontPoint_OrdinaryTruck, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+              <TextBox Text="{Binding DropBehindPoint_OrdinaryTruck, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" />
+            </StackPanel>
+          </StackPanel>
+        </GroupBox>
+      </StackPanel>
+    </ScrollViewer>
+    <UniformGrid Columns="3" Grid.Column="1" VerticalAlignment="Bottom">
+      <Button VerticalAlignment="Bottom" HorizontalAlignment="Left" Padding="0" Style="{StaticResource MaterialDesignFlatButton}" Grid.Row="1" Click="RequirKeyboardClick">
+        <wpf:PackIcon xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf" wpf:PackIcon.Kind="Keyboard" FrameworkElement.Height="45" FrameworkElement.Width="60" Control.Foreground="#FF00008B" FrameworkElement.VerticalAlignment="Center" />
+      </Button>
+      <Button Content="{x:Static l:Lang.SAVE}" Width="100" Click="btnSaveClick" />
+      <Button Content="{x:Static l:Lang.CANCEL}" Width="100" Click="CancelClick" />
+    </UniformGrid>
+  </Grid>
+</Window>

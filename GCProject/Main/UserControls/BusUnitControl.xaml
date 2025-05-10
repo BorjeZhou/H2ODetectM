@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="GCProject.Main.UserControls.BusUnitControl" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:GCProject.Main.UserControls">
+  <Grid Background="{StaticResource GloableBackgroundColor}">
+    <Grid Name="gd_rx">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="35" />
+        <ColumnDefinition />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+      </Grid.RowDefinitions>
+      <TextBox Foreground="#FFFFFFFF" Style="{StaticResource DispalyTextBox}" HorizontalContentAlignment="Center" Cursor="Hand" Text="{Binding PackSum_Rx, Mode=OneWay}" Background="{Binding Conn_Rx, Converter={StaticResource bool2BgColorConverter}}" />
+      <TextBox Text="1" Grid.Row="1" Style="{StaticResource DispalyTextBox}" HorizontalContentAlignment="Center" Background="{StaticResource GloableBackgroundColor}" />
+      <TextBox Text="2" Grid.Row="2" Style="{StaticResource DispalyTextBox}" HorizontalContentAlignment="Center" Background="{StaticResource GloableBackgroundColor}" />
+      <TextBox Text="3" Grid.Row="3" Style="{StaticResource DispalyTextBox}" HorizontalContentAlignment="Center" Background="{StaticResource GloableBackgroundColor}" />
+      <TextBlock Grid.Column="1" Text="Current" VerticalAlignment="Center" HorizontalAlignment="Center" />
+      <TextBlock Grid.Column="2" Text="Total" VerticalAlignment="Center" HorizontalAlignment="Center" />
+      <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource DispalyTextBox}" Text="{Binding Raw_CPS_Rx, Mode=OneWay}" />
+      <TextBox Grid.Row="1" Grid.Column="2" Style="{StaticResource DispalyTextBox}" Text="{Binding Avg_CPS_Rx, Mode=OneWay}" />
+      <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource DispalyTextBox}" Text="{Binding Raw_Temp_Rx, Mode=OneWay}" />
+      <TextBox Grid.Row="2" Grid.Column="2" Style="{StaticResource DispalyTextBox}" Text="{Binding Avg_Temp_Rx, Mode=OneWay}" />
+      <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource DispalyTextBox}" Text="{Binding Raw_Dist_Rx, Mode=OneWay}" />
+      <TextBox Grid.Row="3" Grid.Column="2" Style="{StaticResource DispalyTextBox}" Text="{Binding Avg_Dist_Rx, Mode=OneWay}" />
+    </Grid>
+    <Grid Name="gd_tx">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="35" />
+        <ColumnDefinition />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+      </Grid.RowDefinitions>
+      <TextBox Foreground="#FFFFFFFF" Style="{StaticResource DispalyTextBox}" HorizontalContentAlignment="Center" Cursor="Hand" Text="{Binding PackSum_Tx, Mode=OneWay}" Background="{Binding Conn_Tx, Converter={StaticResource bool2BgColorConverter}}" />
+      <TextBox Text="1" Grid.Row="1" Style="{StaticResource DispalyTextBox}" HorizontalContentAlignment="Center" Background="{StaticResource GloableBackgroundColor}" />
+      <TextBox Text="2" Grid.Row="2" Style="{StaticResource DispalyTextBox}" HorizontalContentAlignment="Center" Background="{StaticResource GloableBackgroundColor}" />
+      <TextBox Text="3" Grid.Row="3" Style="{StaticResource DispalyTextBox}" HorizontalContentAlignment="Center" Background="{StaticResource GloableBackgroundColor}" />
+      <TextBlock Grid.Column="1" Text="Current" VerticalAlignment="Center" HorizontalAlignment="Center" />
+      <TextBlock Grid.Column="2" Text="Total" VerticalAlignment="Center" HorizontalAlignment="Center" />
+      <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource DispalyTextBox}" Text="{Binding Raw_CPS_Tx, Mode=OneWay}" />
+      <TextBox Grid.Row="1" Grid.Column="2" Style="{StaticResource DispalyTextBox}" Text="{Binding Avg_CPS_Tx, Mode=OneWay, StringFormat=F2}" />
+      <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource DispalyTextBox}" Text="{Binding Raw_Temp_Tx, Mode=OneWay}" />
+      <TextBox Grid.Row="2" Grid.Column="2" Style="{StaticResource DispalyTextBox}" Text="{Binding Avg_Temp_Tx, Mode=OneWay, StringFormat=F2}" />
+      <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource DispalyTextBox}" Text="{Binding Raw_Dist_Tx, Mode=OneWay}" />
+      <TextBox Grid.Row="3" Grid.Column="2" Style="{StaticResource DispalyTextBox}" Text="{Binding Avg_Dist_Tx, Mode=OneWay, StringFormat=F2}" />
+    </Grid>
+  </Grid>
+</UserControl>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="GCProject.Main.UserControls.TempCorrectionControl" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:GCProject.Main.UserControls" xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:config="clr-namespace:GCProject.Main.Configs" xmlns:l="clr-namespace:GCProject.Main.LangResource" xmlns:ml="clr-namespace:GCProject.Main.Data.Models" Margin="0">
+  <DockPanel>
+    <FrameworkElement.Resources>
+      <ResourceDictionary>
+        <Style x:Key="{x:Type TextBox}" TargetType="{x:Type TextBox}" BasedOn="{StaticResource EditTextBox}">
+          <Setter Property="BorderThickness" Value="1" />
+          <Setter Property="FontWeight" Value="Normal" />
+        </Style>
+      </ResourceDictionary>
+    </FrameworkElement.Resources>
+    <StackPanel Orientation="Horizontal">
+      <TextBlock Text="{x:Static l:Lang.TC_Order}" VerticalAlignment="Center" Margin="10,0,0,0" />
+      <TextBox VerticalContentAlignment="Center" Width="30" Height="25" Margin="10,5" HorizontalContentAlignment="Left" Text="{Binding Order, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />
+      <TextBox VerticalContentAlignment="Center" Width="50" Height="25" Margin="30,5,10,5" HorizontalContentAlignment="Center" Text="{Binding StartTemp, ValidatesOnDataErrors=True}" />
+      <TextBlock Text="&lt;" VerticalAlignment="Center" />
+      <TextBlock Text="{x:Static l:Lang.RecordWindow_Temp}" VerticalAlignment="Center" Margin="10" />
+      <TextBlock Text="&lt;=" VerticalAlignment="Center" />
+      <TextBox VerticalContentAlignment="Center" Width="50" Height="25" Margin="10,5" HorizontalContentAlignment="Center" Text="{Binding EndTemp, ValidatesOnDataErrors=True}" />
+      <TextBlock Text="{x:Static l:Lang.PSW_TempCorrection_Value}" VerticalAlignment="Center" Margin="10,0,0,0" />
+      <TextBox VerticalContentAlignment="Center" Height="25" Width="40" Margin="10,5" HorizontalContentAlignment="Center" Text="{Binding StaticCorrection, ValidatesOnDataErrors=True}" />
+    </StackPanel>
+  </DockPanel>
+</UserControl>

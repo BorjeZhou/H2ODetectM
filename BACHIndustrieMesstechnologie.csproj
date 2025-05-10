@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>BACHIndustrieMesstechnologie</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <!--<TargetFramework>netcoreapp3.1</TargetFramework>-->
+	<TargetFramework>net8.0-windows</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="resource\mainlogo.png" />
+    <None Remove="agent_ico.ico" />
+    <None Remove="resource\splashlogo1.png" />
+    <None Remove="resource\applogo.ico" />
+    <None Remove="resource\car1.png" />
+    <None Remove="resource\car2.png" />
+    <None Remove="resource\pmt9000.png" />
+    <None Remove="resource\pmt9000_agent.png" />
+    <EmbeddedResource Include="resource\mainlogo.png" LogicalName="resource/mainlogo.png" />
+    <EmbeddedResource Include="agent_ico.ico" LogicalName="agent_ico.ico" />
+    <EmbeddedResource Include="resource\splashlogo1.png" LogicalName="resource/splashlogo1.png" />
+    <EmbeddedResource Include="resource\applogo.ico" LogicalName="resource/applogo.ico" />
+    <EmbeddedResource Include="resource\car1.png" LogicalName="resource/car1.png" />
+    <EmbeddedResource Include="resource\car2.png" LogicalName="resource/car2.png" />
+    <EmbeddedResource Include="resource\pmt9000.png" LogicalName="resource/pmt9000.png" />
+    <EmbeddedResource Include="resource\pmt9000_agent.png" LogicalName="resource/pmt9000_agent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="5.2.2-ci991" />
+    <PackageReference Include="MaterialDesignThemes.Wpf" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\BACH_PMT9000\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot">
+      <HintPath>..\BACH_PMT9000\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Ports">
+      <HintPath>..\BACH_PMT9000\System.IO.Ports.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions">
+      <HintPath>..\BACH_PMT9000\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>..\BACH_PMT9000\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Sqlite">
+      <HintPath>..\BACH_PMT9000\Microsoft.EntityFrameworkCore.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\BACH_PMT9000\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational">
+      <HintPath>..\BACH_PMT9000\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
